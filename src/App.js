@@ -1,7 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import { LoginView } from './LoginView';
-import { useEffect, useState } from "react";
+import { useEffect, useState } from "react"
+import { Register } from './Register';
 
 
 function App() {
@@ -21,8 +22,8 @@ function App() {
           // target="_blank"
           // rel="noopener noreferrer"
         >
-          <LoginView />
-   
+          {/* <LoginView /> */}
+   <Register />
         </a>
       </header>
     </div>

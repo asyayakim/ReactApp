@@ -2,9 +2,10 @@ import React from "react";
 import { useEffect, useRef, useState } from "react";
 import "./styleLoginRegister.css";
 
-export function LoginView() {
+export function Register() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("");
    const usernameRef = useRef();
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -16,7 +17,7 @@ export function LoginView() {
 
   return (
     <div className="login_container">
-      <h1>Login</h1>
+      <h1>Register</h1>
       <form onSubmit={handleSubmit} className="form_container">
         <div className="form_controls">
           <label htmlFor="username">Username</label>
@@ -38,7 +39,16 @@ export function LoginView() {
           />
         </div>
         <div className="form_controls">
-          <button className="button">Login</button>
+          <label htmlFor="password">Email</label>
+          <input
+            id="email"
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+        </div>
+        <div className="form_controls">
+          <button className="button">Register</button>
         </div>
       </form>
     </div>
