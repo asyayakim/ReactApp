@@ -3,6 +3,7 @@ import './App.css';
 import { LoginView } from './LoginView';
 import { useEffect, useState } from "react"
 import { Register } from './Register';
+import { UserPage } from './UserPage';
 
 
 function App() {
@@ -23,7 +24,8 @@ function App() {
           // rel="noopener noreferrer"
         >
           {/* <LoginView /> */}
-   <Register />
+   {/* <Register /> */}
+   <UserPage />
         </a>
       </header>
     </div>
