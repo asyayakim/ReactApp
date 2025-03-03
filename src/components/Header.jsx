@@ -1,6 +1,6 @@
 import React, { use } from "react";
 
-function Navbar() {
+export default function Header() {
     return (
       <header>
         <nav>
@@ -47,4 +47,3 @@ function Navbar() {
       </header>
     );
 }
-export default Navbar;
