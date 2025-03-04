@@ -1,10 +1,11 @@
 export default function Footer()
 {
-    return
-    <div>
+    return <div>
         <footer>
-            <p>Contact
-                
+            <p>Contact  
+            </p>
+            <p>
+                Connect
             </p>
         </footer>
     </div>

@@ -1,4 +1,5 @@
 import React, { use } from "react";
+import { Link } from "react-router-dom";
 
 export default function Header() {
     return (
@@ -6,29 +7,35 @@ export default function Header() {
         <nav>
           <ul>
             <div className="logo">
-              <a href="/">
+              
                 <img
                   src="https://img.icons8.com/?size=100&id=TRRXhYhVs7rA&format=png&color=000000"
                   alt="Logo"
                   width="40"
                 />
-               <h1>Alt For Barna</h1>
-              </a>
+                <h1>Toys</h1>
+             
             </div>
             <li>
-              <a href="/">
-                <img
-                  className="nav-icon"
-                  src="https://img.icons8.com/?size=100&id=86527&format=png&color=000000"
-                  alt="Logo"
-                  width="24"
-                  height={24}
-                />
-                Home
-              </a>
+              <Link to="/">Home</Link>
+              <img
+                className="nav-icon"
+                src="https://img.icons8.com/?size=100&id=86527&format=png&color=000000"
+                alt="Logo"
+                width="24"
+                height={24}
+              />
             </li>
             <li>
-              <a href="/login">Login</a>
+              <Link to="/login" >Login</Link>
+            </li>
+            <li>
+              <Link to="/cart">Cart</Link>
+              <img
+                src="https://img.icons8.com/?size=100&id=kqlTT3Fp2Ga1&format=png&color=000000"
+                className="nav-icon"
+                height={24}
+              ></img>
             </li>
           </ul>
           <section className="search-section">

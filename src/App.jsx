@@ -6,7 +6,6 @@ import { Register } from "./pages/Register";
 import { UserPage } from "./pages/UserPage";
 import Header from "./components/Header";
 import "./css/App.css";
-import MainData from "./pages/MainData";
 import { Outlet } from "react-router-dom";
 import Footer from "./components/Footer";
 
@@ -22,7 +21,6 @@ function App() {
       <header className="App-header">
         <Header />
         <Outlet />
-        {/* <MainData /> */}
         <Footer />
       </header>
     </div>

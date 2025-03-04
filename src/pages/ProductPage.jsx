@@ -1,9 +1,14 @@
+import { useParams } from "react-router-dom"
+
 export default function ProductPage() {
-    return 
-  (
+  const {productId} = useParams(); 
+  
+  fetch (`https://fakestoreapi.com/product/${productId}`)
+
+  return  (
     <div>
         <p>
-            ProductPage
+            ProductPage {}
         </p>
     </div>
   )
