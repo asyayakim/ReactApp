@@ -16,13 +16,12 @@
 li {
   margin: auto;
 }
-ul {
+.navigation-layout {
   display: flex;
   list-style: none;
-  min-height: 15vh;
+  max-height: 15vh;
   padding: 10px;
-
-  align-items: flex-end;
+  justify-content: space-between;
 }
 a {
   display: flex;
@@ -59,7 +58,7 @@ header {
 
 .logo img {
   width: 50px;
-  height: 50px;
+  height: auto;
   object-fit: cover;
   border-radius: 12px;
 }
@@ -76,7 +75,8 @@ header {
   color: var(--accent-color);
 }
 
-.auth .btn {
+.button-basic {
+  border: none;
   padding: 0.5rem 1rem;
   border-radius: 20px;
   text-decoration: none;
@@ -86,13 +86,13 @@ header {
   margin-left: 0.5rem;
 }
 
-.auth .btn:hover {
+.button-basic:hover {
   background-color: var(--accent-color-dark);
   transform: scale(1.05);
 }
 
 .search-section {
-  padding: 2rem 0;
+  padding: 1rem 0;
   display: flex;
   justify-content: center;
 }
@@ -157,7 +157,7 @@ header {
   box-shadow: var(--hover-shadow);
 }
 
-.object-card img {
+.main-image-for-card {
   width: 60px;
   height: 60px;
   object-fit: contain;
@@ -175,12 +175,30 @@ header {
   color: #666;
   line-height: 1.4;
 }
-
-
+.icon-text
+{
+  display: flex;
+  padding: 5px;
+}
+.icon-favorite-container {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+}
+.icon-favorite
+{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.icon-favorite:hover {
+    transform: scale(1.1);
+}
 footer {
   text-align: center;
   padding: 1rem 2rem;
-  background-color: var(--primary-color);
+  background-color: var(  --secondary-color);
   box-shadow: var(--shadow);
   margin-top: 2rem;
 }

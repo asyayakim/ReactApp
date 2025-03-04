@@ -118,31 +118,41 @@ export default function ProductsPage(){
          <section className="objects-section" id="objects">
            <div className="objects-container">
              {products.map((product) => {
-                return <Link key={product.id} to={`/product/${product.id}`}>
-                 <article className="object-card">
-                   <h3>{product.name}</h3>
-                   <img src={product.image} alt={product.name} />
-                   <p>
-                     <strong>Price:</strong> ${product.price}
-                   </p>
-                   <p>
-                     <strong>Amount:</strong> {product.amount} in stock
-                   </p>
-                   <p>
-                     <strong>Description:</strong> {product.description}
-                   </p>
-                   <button>
-                    
-                   </button>
-                   {/* <a
+                return (
+                  <Link key={product.id} to={`/product/${product.id}`}>
+                    <article className="object-card">
+                      div
+
+                      <h3>{product.name}</h3>
+                      <img
+                        className="main-image-for-card"
+                        src={product.image}
+                        alt={product.name}
+                      />
+                      <p>
+                        <strong>Price:</strong> ${product.price}
+                      </p>
+                      <p>
+                        <strong>Amount:</strong> {product.amount} in stock
+                      </p>
+                      <p>
+                        <strong>Description:</strong> {product.description}
+                      </p>
+                      <button className="button-basic">Add Product</button>
+                      <img
+                        className="icon-favorite"
+                        src="https://img.icons8.com/?size=100&id=85033&format=png&color=000000"
+                      ></img>
+                      {/* <a
                      href={product.url}
                      target="_blank"
                      rel="noopener noreferrer"
                    >
                      Buy Now
                    </a> */}
-                 </article>
-               </Link>
+                    </article>
+                  </Link>
+                );
 })}
            </div>
          </section>
